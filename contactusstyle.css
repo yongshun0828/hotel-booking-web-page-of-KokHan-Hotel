@@ -1,0 +1,400 @@
+@charset "utf-8";
+@font-face { font-family: Cassandra; src: url('CassandraPersonalUseRegular-3BjG.ttf');}
+@font-face { font-family: KitchenHome; src: url('KitchenHome-rg0gB.ttf');}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #DFB78C ;
+    font-size: 14px;
+}
+
+.contacttitle
+{   
+    
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    animation-name: example1;
+    animation-duration: 6s;
+}
+
+@keyframes example1 {
+  from {color: black;}
+  to {color: whitesmoke;}
+}
+
+.contacttitle h1
+{
+  font-family: Cassandra;
+}
+
+.contact-box
+{
+    background: #fff;
+    display: flex;
+}
+
+.contact-left
+{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background: rgba(94,73,60,255);
+    color: #fff;
+}
+
+h1
+{
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+p
+{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.input-row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group
+{
+    flex-basis: 45%;
+}
+
+.form-control
+{
+    width: 200px;
+}
+
+input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+label
+{
+    margin-bottom: 6px;
+    display: block;
+    color: #8e4517;
+}
+
+button
+{
+    background: #692b04;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h3
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: KitchenHome;
+    font-size: 35px;
+}
+
+.contact-right h3
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: KitchenHome;
+    font-size: 35px;
+}
+
+label
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+table
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.info p
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
+tr td:first-child
+{
+    padding-right: 20px;
+}
+
+tr td
+{
+    padding-top: 20px;
+    font-size: medium;
+}
+
+.info
+{
+    padding: 10px;
+    margin-bottom: 120px;
+}
+
+a
+{
+    color: orange;
+}
+
+/*header*/
+
+.header{
+  padding: 1rem 5%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  height: 45px;
+  
+}
+.header #logo img{
+  width: 70px;
+}
+
+
+.header .navbar a{
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+audio
+{
+  display: none;
+}
+
+
+.header .navbar a:hover{
+ color: red ;
+}
+
+
+.header .icons{
+    font-size: 2rem;
+   
+}
+i{
+  color: black;
+}
+
+i:hover{
+  color: red;
+}
+
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: red;
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+  position: absolute;
+  top: 110%;
+  right: 100%;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+}
+.header .search-box.active{
+  right: 2rem;
+}
+.header .navbar.active{
+  left: 0;
+}
+
+
+.header .navbar .active{
+  color: red;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  border-radius: 15px;
+  top: 110%;
+  width: 200px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-size: 1.7rem;
+}
+.dropdown-content a:hover {
+  background-color: white;
+  color: white;
+}
+ 
+  
+
+ .pgaboutus h3
+ {
+    color: black;
+    font-size: small;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ 
+  /*footer*/
+
+  footer{
+    background-color: #111;
+  }
+  
+  .footContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 1.0;
+  }
+  
+  /*Hover Effect on Social Media Icon */
+  
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerNav{
+    margin: 30px 0;
+    font-weight: bold;
+  }
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nondisc;
+  }
+  
+  .footerNav ul li a{
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  .footerBottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+
+  .googlemap
+  {
+    margin-top: 30px;
+    margin-bottom: -50px;
+  }
+
+i
+{
+  color: black;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="hotel_py_styles4.css" rel="stylesheet">
+	<title>Payment</title>
+</head>
+<body>
+	<audio controls autoplay loop>
+		<source src="audio.mp3" type="audio/mpeg">
+	  </audio>
+	<header class="header">
+        <a href="home.html" id="logo"><img src="logo.jpg" alt="home"></a>          
+        <nav class="navbar">
+          <a href ="home.html">Home</a>
+          <div class="dropdown">
+            <a href="#">Stay</a>
+            <div class="dropdown-content">
+              <a href="check.html">Package</a>
+              <a href="ava.html">Room avaibility</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Excitement</a>
+            <div class="dropdown-content">
+              <a href="facilities.html">Facilities</a>
+              <a href="activity.html">Activities</a>
+              <a href="dining1.html">Dining</a>
+            </div>
+          </div>
+          <a href="event.html">Event</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="hotel_booking.html">Booking</a>
+          <div class="dropdown">
+            <a href="#">Our Company</a>
+            <div class="dropdown-content">
+              <a href="FAQ.html">FAQ</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="creviews.html">Customer Feedback</a>
+            </div>
+          </div>
+        </nav>
+        <div class="icons">
+            <a href="hotel_cart.html">
+                <i class="fa-solid fa-cart-shopping" id="add-to-cart"></i>
+            </a>
+            <a href="contactus.html">
+                <i class="fa-solid fa-address-book"></i>
+              </a>
+        </div>
+      </header>
+	<div class="container">
+		<form action="">
+			<div class="row">
+				<div class="col">
+					<h3 class="title">billing address</h3>
+					<div class="inputBox">
+						<span>full name :</span>
+						<input type="text" id="name" placeholder="Lionel Thum">
+					</div>
+					<div class="inputBox">
+						<span>email :</span>
+						<input type="email" id="email" placeholder="example@example.com">
+					</div>
+					<div class="inputBox">
+						<span>address :</span>
+						<input type="text" id ="address" placeholder="room - street - locality">
+					</div>
+					<div class="inputBox">
+						<span>city :</span>
+						<input type="text" id="city" placeholder="Kuala Lumpur">
+					</div>
+					<div class="flex">
+						<div class="inputBox">
+							<span>state :</span>
+							<input type="text"id="state" placeholder="Kuala Lumpur">
+						</div>
+						<div class="inputBox">
+							<span>zip code :</span>
+							<input type="text" id="zipcode" placeholder="74125">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="py">
+				<h3 class="title">payment</h3>
+				<div class="inputBox">
+					<span>cards accepted :</span>
+					<img src="card.jpg" alt="" usemap="card">
+				</div>
+				<div class="inputBox">
+					<span>name on card :</span>
+					<input type="text" id="cardname"placeholder="ryan jeo kai sing">
+				</div>
+				<div class="inputBox">
+					<span>credit card number :</span>
+					<input type="number" id="cardnum" placeholder="1111-2222-3333-4444">
+				</div>
+				<div class="flex">
+					<div class="inputBox">
+						<span>exp :</span>
+						<input type="text" id="exp" placeholder="1/2023">
+					</div>
+					<div class="inputBox">
+						<span>CVV :</span>
+						<input type="text" id="cvv" placeholder="123">
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="proceed to checkout" class="submit-btn" onclick="displaySuccessMessage(amountPaid);">
+		</div>		
+		</form>
+	</div>
+	<footer>
+		<div class="footContainer">
+			<div class="socialIcons">
+            
+				<a href="https://www.facebook.com/lagunaredang/"> <i class="fa-brands fa-square-facebook"></i></a>
+				<a href="https://www.instagram.com/liangwei_94/"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://twitter.com/anwaribrahim"><i class="fa-brands fa-twitter"></i></a>
+				<a href="tel: +0183574913"><i class="fa-solid fa-phone"></i></a>
+			</div>
+			<div class ="footerNav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="https://www.thestar.com.my/">News</a></li>
+					<li><a href="aboutus.html">About </a></li>
+					<li><a href="contactus.html">Contact Us </a></li>
+					<li><a href="https://scontent.fkul4-2.fna.fbcdn.net/v/t1.6435-9/98116745_110648557318161_899180102389071872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=SEWDPYke5o8AX8D2Lbp&_nc_ht=scontent.fkul4-2.fna&oh=00_AfDTjhrfIB8hh-iswZ06sNzWmcbaCVQIyQpjTLKi68_J-g&oe=6481C43D">Our Team</a></li>
+	
+				</ul>
+			</div>
+			<div class="footerBottom">
+				<p>Copyright &copy;2022; Designed by <span class="designer">KokHan Hotel </span></p>
+			</div>
+		</div>
+		</footer>	
+	<script src="hotel_py.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+    <link rel="stylesheet" href="ava.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    
+    
+</head>
+<body>
+  <audio controls autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+  <header class="header">
+    <a href="home.html" id="logo"><img src="image/logo.png" alt="home"></a>          
+    <nav class="navbar">
+      <a href ="home.html" >Home</a>
+      <div class="dropdown">
+        <a href="#"class="active">Stay</a>
+        <div class="dropdown-content">
+          <a href="check.html">Room details</a>
+          <a href="ava.html" class="active">Room avaibility</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Excitement</a>
+        <div class="dropdown-content">
+          <a href="facilities.html">Facilities</a>
+          <a href="activity.html">Activities</a>
+          <a href="dining1.html">Dining</a>
+        </div>
+      </div>
+      <a href="event.html">Event</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="hotel_booking.html">Booking</a>
+      <div class="dropdown">
+        <a href="#">Our Company</a>
+        <div class="dropdown-content">
+          <a href="FAQ.html">FAQ</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="creviews.html">Customer Feedback</a>
+        </div>
+      </div>
+    </nav>
+    <div class="icons">
+        <a href="hotel_cart.html">
+            <i class="fa-solid fa-cart-shopping" id="add-to-cart"></i>
+        </a>
+        <a href="contactus.html">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+    </div>
+  </header>
+<div class="check-availability">
+    <h2>Check Availability</h2>
+    <form id="check-availability-form" action="hotel_cart.html" method="post">
+      <div class="form-group">
+        <label for="check-in-date">Check-In Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+      </div>
+      <div class="form-group">
+        <label for="check-out-date">Check-Out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="rooms">Rooms:</label>
+        <select id="rooms" name="rooms">
+          <option value="standard">Standard Room</option>
+          <option value="deluxe city">Deluxe City View Room</option>
+          <option value="deluxe family">Deluxe Family Room</option>
+          <option value="Luxury">Luxury Room</option>
+          <option value="Deluxe Seaview">Deluxe Seaview</option>
+          <option value="Premier Seaview">Premier Sea</option>
+        </select>
+      </div>      
+      <div class="form-group">
+       <button type="submit">Check Availability</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footContainer">
+      <div class="socialIcons">
+            
+        <a href="https://www.facebook.com/lagunaredang/"> <i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com/liangwei_94/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/anwaribrahim"><i class="fa-brands fa-twitter"></i></a>
+        <a href="tel: +0183574913"><i class="fa-solid fa-phone"></i></a>
+    </div>
+    <div class ="footerNav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://www.thestar.com.my/">News</a></li>
+            <li><a href="aboutus.html">About </a></li>
+            <li><a href="contactus.html">Contact Us </a></li>
+            <li><a href="https://scontent.fkul4-2.fna.fbcdn.net/v/t1.6435-9/98116745_110648557318161_899180102389071872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=SEWDPYke5o8AX8D2Lbp&_nc_ht=scontent.fkul4-2.fna&oh=00_AfDTjhrfIB8hh-iswZ06sNzWmcbaCVQIyQpjTLKi68_J-g&oe=6481C43D">Our Team</a></li>
+
+        </ul>
+    </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2022; Designed by <span class="designer">KokHan Hotel </span></p>
+
+        </div>
+    </div>
+    </footer>
+    <script src="home.js"> </script>
+
+</body>
+</html>
+  

@@ -1,0 +1,322 @@
+/*heading design*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background: #DFB78C ;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header{
+    padding: 1rem 5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    font-family: Arial, Helvetica, sans-serif;
+  
+  
+  }
+  .header #logo img{
+    width: 70px;
+  }
+  
+  
+  .header .navbar a{
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  .header .navbar a:hover{
+   color: red ;
+  }
+  
+  
+  .header .icons{
+      font-size: 1.5rem;
+     
+  }
+  i{
+    color: black;
+  }
+  
+  i:hover{
+    color: red;
+  }
+  
+  
+  .header .icons div{
+      margin-left: 1rem;
+      cursor: pointer;
+  }
+  .header .icons div:hover{
+      color: red;
+  }
+  .header .icons #menu-bars{
+      display: none;
+  }
+  .header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+  }
+  .header .search-box.active{
+    right: 2rem;
+  }
+  .header .navbar.active{
+    left: 0;
+  }
+  
+  
+  .header .navbar .active{
+    color: red;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    border-radius: 15px;
+    top: 110%;
+    width: 200px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 1.7rem;
+  }
+  .dropdown-content a:hover {
+    background-color: white;
+    color: white;
+  }
+  
+/*body design*/
+ .container{
+    width: 1000px;
+    margin: auto;
+    height: 600px;
+    background-color: #e9e6d9;
+    padding: 4rem 5rem;
+    position: relative;
+    border-radius: 50px;
+    margin-top: 150px;
+ }
+.wavy{
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.wavy span{
+  position: relative;
+  display: inline-block;
+  color: #eb6d6d;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+  0%{
+    transform: translateY(0px);
+  }
+  20%{
+    transform: translateY(-20px);
+  }
+  40%,100%{
+    transform: translateY(0px);
+  }
+}
+
+ .textblock{
+    width: 45%;
+    font-family: poppins;
+ } 
+
+ .textblock p{
+    margin-bottom: 1.3rem;
+    font-size: 30px;
+    font-style: oblique;
+ }
+ .container img{
+    position: absolute;
+    border-radius: 50%;
+    top: 16%;
+    right: 5%;
+    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
+ }
+ @media only screen and (max-width:768px)
+ {
+    .container{
+        width: 90%;
+    }
+    .container .textblock{
+        display: none;
+    }
+ }
+
+/*footer design*/
+  footer{
+    background-color: #111;
+    margin-top: 50px;
+  }
+  
+  
+  .footContainer{
+    width: 100%;
+    padding: 50px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 1.0;
+  }
+  
+  
+  /*Hover Effect on Social Media Icon */
+  
+  
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  
+  .footerNav{
+    margin: 30px 0;
+    font-weight: bold;
+  }
+  
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nondisc;
+  }
+  
+  
+  .footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  
+  
+  }
+  .footerBottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+  
+  
+    .header .icons #menu-bars{
+        display: inline-block;
+    }
+    .header .navbar{
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      right: 0;
+      background: var(--maincolor);
+  
+  
+  }
+  .header .navbar a{
+      display: block;
+      margin: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+  }
+  .footerNav ul{
+    flex-shrink: column;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px
+  }
+  }
+  

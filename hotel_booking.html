@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="hotel_booking.css" rel="stylesheet">
+	<title>Booking</title>
+</head>
+<body>
+  <audio controls autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+	<header class="header">
+    <a href="home.html" id="logo"><img src="logo.jpg" alt="home"></a>          
+    <nav class="navbar">
+      <a href ="home.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Stay</a>
+        <div class="dropdown-content">
+          <a href="check.html">Package</a>
+          <a href="ava.html">Room avaibility</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Excitement</a>
+        <div class="dropdown-content">
+          <a href="facilities.html">Facilities</a>
+          <a href="activity.html">Activities</a>
+          <a href="dining1.html">Dining</a>
+        </div>
+      </div>
+      <a href="event.html">Event</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="hotel_booking.html" class="active">Booking</a>
+      <div class="dropdown">
+        <a href="#">Our Company</a>
+        <div class="dropdown-content">
+          <a href="FAQ.html">FAQ</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="creviews.html">Customer Feedback</a>
+        </div>
+      </div>
+    </nav>
+    <div class="icons">
+        <a href="hotel_cart.html">
+            <i class="fa-solid fa-cart-shopping" id="add-to-cart"></i>
+        </a>
+        <a href="contactus.html">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+    </div>
+  </header>
+  <main>
+    <p>Welcome to our Hotel! Book your stay today!</p>
+    <section id="room-list">
+      <div class="room">
+        <img src="Standard_Room.jpg" alt="Standard Room" usemap="Standard Room">
+        <map usemap>
+          <area shape="rect" coords="220,230,445,331" title="Bed" href="bed.html">
+          <area shape="rect" coords="100,250,3,126" alt="Television" href="tv.html">
+        </map>
+        <h2>Standard Room</h2>
+        <p>A standard hotel room already includes basic stuff. It includes a table, chairs, bed, dressing table, television, telephone, and a bathroom.</p>
+      </div>
+      <div class="room">
+        <img src="Deluxe_City_View_Room.jpg" alt="Deluxe City View Room" usemap="Deluxe City View Room">
+        <map usemap="Deluxe City View Room">
+          <area shape="rect" coords="52,168,433,327" title="View" href="view.html">
+          <area shape="rect" coords="598,316,364,585" alt="Bed" href="bed.html">
+        </map>
+        <h2>Deluxe City View Room</h2>
+        <p>Rooms enjoy a classic décor, with a neutral colour palette, contemporary artwork and a selection of light brown and gold soft furnishings.</p>
+      </div>
+      <div class="room">
+        <img src="Deluxe_Family_Room.jpg" alt="Deluxe Family Room" usemap="Deluxe Family Room">
+        <map usemap="Deluxe Family Room">
+          <area shape="rect" coords="80,537,1053,431" title="Bed" href="bed.html">
+          <area shape="rect" coords="854,72,1187,290" title="View" href="view.html">
+        </map>
+        <h2>Deluxe Family Room</h2>
+        <p>Travelling with family members or a group of friends? Our Deluxe Family Room is perfect for you and comfortably accommodates up to four adults or two adults and two children. </p>
+      </div>
+      <div class="room">
+        <img src="Luxury_Room.jpg" alt="Luxury Room" usemap="Luxury Room">
+        <map usemap="Luxury Room">
+          <area shape="rect" coords="410,568,582,442" title="Bed" href="bed.html">
+        </map>
+        <h2>Luxury Room</h2>
+        <p>The luxury room is tastefully decorated with high-quality materials, exquisite furnishings, and attention to detail. The color palette is often rich and inviting, combining warm tones with touches of gold or silver accents to create a regal ambiance. The room may feature plush carpets, elegant drapes, and ornate fixtures that add to its overall charm.</p>
+      </div>
+      <div class="room">
+        <img src="Deluxe_Seaview.jpg" alt="Deluxe Seaview" usemap="Deluxe Seaview">
+        <map usemap="Deluxe Seaview">
+          <area shape="rect" coords="903,552,1267,689" title="Bed" href="bed.html">
+          <area shape="rect" coords="2,771,664,320" title="Seaview" href="seaview.html">
+        </map>
+        <h2>Deluxe Seaview</h2>
+        <p>With sweeping sea views, this room is adorned with indigenous materials and nature-inspired tones evoking an airy feel, offering a refreshing welcome and comfortable stay.</p>
+      </div>
+      <div class="room">
+        <img src="Premier_Sea.jpg" alt="Premier Sea" usemap="Premier Sea">
+        <map usemap="Deluxe Seaview">
+          <area shape="rect" coords="763,778,1592,757" title="Bed" href="bed.html">
+          <area shape="rect" coords="478,407,827,644" title="Seaview" href="seaview.html">
+        </map>
+        <h2>Premier Sea</h2>
+        <p> Rooms comes with a long balcony overlooking the white sandy beach and deep blue sea. Room size is 366 sq ft (approximately). Inter-connecting room with Deluxe Sea View room is available. Limited unit and subject to availability. </p>
+      </div>
+    </section>
+ <div class="container"></div>
+    <form>
+        <tr>
+          <h1 class="title">Make a reservation</h1></td>
+        </tr>
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date">
+        <label for="check-out-date">Check-out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date">
+        <label for="guests">Guests:</label>
+          <select id="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        <label for="promocode">Promo Code:</label>
+        <input type="text" id="promocode" name="promocode" placeholder="FREEROOM"> 
+        <a href="hotel_cart.html">
+        <img src="booking.jpg" onclick="validateAndRedirect();"></a>
+      </form>
+  </div>
+  </main>
+    <footer>
+      <div class="footContainer">
+        <div class="socialIcons">
+            
+          <a href="https://www.facebook.com/lagunaredang/"> <i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/liangwei_94/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/anwaribrahim"><i class="fa-brands fa-twitter"></i></a>
+          <a href="tel: +0183574913"><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <div class ="footerNav">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="https://www.thestar.com.my/">News</a></li>
+              <li><a href="aboutus.html">About </a></li>
+              <li><a href="contactus.html">Contact Us </a></li>
+              <li><a href="https://scontent.fkul4-2.fna.fbcdn.net/v/t1.6435-9/98116745_110648557318161_899180102389071872_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=SEWDPYke5o8AX8D2Lbp&_nc_ht=scontent.fkul4-2.fna&oh=00_AfDTjhrfIB8hh-iswZ06sNzWmcbaCVQIyQpjTLKi68_J-g&oe=6481C43D">Our Team</a></li>
+
+          </ul>
+      </div>
+          <div class="footerBottom">
+              <p>Copyright &copy;2022; Designed by <span class="designer">KokHan Hotel </span></p>
+          </div>
+      </div>
+      </footer>  
+</body>
+  <script src="hotel_booking.js"></script>
+</html>

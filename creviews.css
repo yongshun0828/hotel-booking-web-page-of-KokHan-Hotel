@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face { font-family: Cassandra; src: url('CassandraPersonalUseRegular-3BjG.ttf'); }
+@font-face { font-family: KitchenHome; src: url('KitchenHome-rg0gB.ttf');}
+
+
+* > * {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-dark: #151C35;
+    --color-secodary-dark: #464C70;
+    --color-primary: #EE709D;
+    --color-text: #8297E2;
+    --color-light: #EBEBFB;
+}
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #DFB78C ;
+    padding-bottom: 100px;
+}
+
+.board{
+    max-width: 987px;
+    width: 100%;
+    background-color: var(--color-dark);
+    text-align: center;
+    border-radius: 8px;
+    padding: 4em 0;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.swiper {
+    width: 600px;
+    height: auto;
+  }
+audio{
+  display: none;
+}
+.swiper .swiper-slide .flex{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper .swiper-slide .comments{
+    background-color: var(--color-light);
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .9em;
+    position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-light);
+    z-index: -99;
+}
+
+
+.swiper .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.swiper .profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin: 10px 0;
+}
+
+.swiper .profile > a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.swiper .profile > span{
+    color: var(--color-text);
+    font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+    color: var(--color-text);
+    display: none;
+} 
+
+@media (min-width: 320px) {
+    .board{
+        width: auto;
+    }
+
+    .swiper {
+        width: 320px;
+      }
+
+      .board > h1, p{
+          padding: 0 2em;
+      }
+}
+
+@media (min-width: 768px) {
+    .board{
+        width: 100%;
+    }
+
+    .swiper {
+        width: 600px;
+      }
+
+    .swiper .swiper-button-prev, .swiper-button-next{
+        display: initial;
+    }
+
+}
+
+.cusreview
+{
+    text-align: center;
+    margin-top: 50px;
+    padding: 80px;
+    background: linear-gradient(to bottom, #8e4517 0%, #dfb78c 100%);
+    color: black;
+    animation-name: example;
+    animation-duration: 6s;
+    font-size: 26px;
+}
+
+.cusreview h1
+{
+  font-family: Cassandra;
+}
+
+@keyframes example {
+  from {color: black;}
+  to {color: whitesmoke;}
+}
+
+.cusreview p
+{
+    font-size: small;
+    color: white;
+    animation-name: example1;
+    animation-duration: 6s;
+    font-size: 15px;
+}
+
+@keyframes example1 {
+  from {color: black;}
+  to {color: whitesmoke;}
+}
+
+.checked {
+  color: orange;
+}
+
+.board h2
+{
+  font-family: KitchenHome;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.board p
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cusreview p
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*header*/
+
+.header{
+  padding: 1rem 5%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  height: 45px;
+
+}
+.header #logo img{
+  width: 70px;
+}
+
+
+.header .navbar a{
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header .navbar a:hover{
+ color: red ;
+}
+
+
+.header .icons{
+    font-size: 2rem;
+   
+}
+i{
+  color: black;
+}
+
+i:hover{
+  color: red;
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: red;
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+  position: absolute;
+  top: 110%;
+  right: 100%;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+}
+.header .search-box.active{
+  right: 2rem;
+}
+.header .navbar.active{
+  left: 0;
+}
+
+
+.header .navbar .active{
+  color: red;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  border-radius: 15px;
+  top: 110%;
+  width: 200px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-size: 1.7rem;
+}
+.dropdown-content a:hover {
+  background-color: white;
+  color: white;
+}
+
+  
+
+ .pgaboutus h3
+ {
+    color: black;
+    font-size: small;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ 
+  /*footer*/
+
+  footer{
+    background-color: #111;
+  }
+  
+  .footContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 1.0;
+  }
+  
+  /*Hover Effect on Social Media Icon */
+  
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerNav{
+    margin: 30px 0;
+    font-weight: bold;
+  }
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nondisc;
+  }
+  
+  .footerNav ul li a{
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  .footerBottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+
+  i
+  {
+    color: black;
+  }

@@ -1,0 +1,125 @@
+/*body design*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background:#efecea;  
+}
+audio{
+    display: none;
+}
+
+h {
+    text-align: center;
+    transform: translate(-20%, -20%);
+    font-size: 74px;
+    font-weight: 1000;
+    font-style: italic;
+    color: transparent;
+    background-image: linear-gradient(#f62525,#1ca084);
+    background-repeat: no-repeat;
+    -webkit-background-clip : text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.table_west {
+    max-width: 900px;
+    border: 2px solid #030303;
+    background-color: #2b1b0a63;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 130px;
+}
+
+table {
+    width: 100%;
+    font-size: 13px;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+    background:linear-gradient(rgb(220, 194, 23),rgb(237, 232, 111));
+}
+
+
+
+table>thead {
+    background-color: #d4a600;
+}
+
+table>thead th {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(242, 242, 11);
+}
+
+table th, table td {
+    border: 1px solid #00000017;
+    text-align: center;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table th.no{
+    color: rgb(7, 9, 7);
+}
+
+table>tbody>tr>td>img {
+    width: 160px;
+    height: 160px;
+    border: 4px solid #873030;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+table>tfoot {
+    background-color: #d4a600;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(242, 242, 11);
+}
+button{
+    background-color: pink;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+button:hover{
+    background: rgb(215, 93, 221);
+}
+button:hover{
+    transform: scale(1.03);
+}
+button.back{
+    float: left;
+    margin-left: 20%;
+}
+button.next{
+    float: right;
+    margin-right: 20%;
+}
+.fa-house{
+    font-size: 20px;
+    color: #E23F6A;
+}
+.fa-forward{
+    font-size: 20px;
+    color: #E23F6A;   
+}

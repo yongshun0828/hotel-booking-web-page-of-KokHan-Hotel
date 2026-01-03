@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3s linear;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #DFB78C ;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  padding: 1rem 5%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.header #logo img{
+  width: 70px;
+  height: 70px;
+}
+
+
+.header .navbar a{
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header .navbar a:hover{
+ color: red ;
+}
+
+
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+i{
+  color: black;
+}
+
+i:hover{
+  color: red;
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: red;
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+  position: absolute;
+  top: 110%;
+  right: 100%;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+}
+.header .search-box.active{
+  right: 2rem;
+}
+.header .navbar.active{
+  left: 0;
+}
+
+
+.header .navbar .active{
+  color: red;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  border-radius: 15px;
+  top: 110%;
+  width: 200px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-size: 1.7rem;
+}
+.dropdown-content a:hover {
+  background-color: white;
+  color: white;
+}
+  
+
+.container{
+    position: relative;
+    background: #aad5f6;
+}
+
+.slide-1{
+    background: url(dining.jpg);
+}
+
+.slide-1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-2{
+    background: url(gymRoom.jpg);
+}
+
+.slide-2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-3{
+    background: url(Spa.jpg);
+}
+
+.slide-3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-4{
+    background: url(Pool.jpg);
+}
+
+.slide-4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-5{
+    background: url(ballroom.jpg);
+}
+
+.slide-5:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-6{
+    background: url(playground.jpg);
+}
+
+.slide-6:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-7{
+    background: url(gameroom.png);
+}
+
+.slide-7:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-8{
+    background: url(Jacuzzi.jpg);
+}
+
+.slide-8:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-9{
+    background: url(businesscenter.jpg);
+}
+
+.slide-9:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide-10{
+    background: url(hotelBar.jpg);
+}
+
+.slide-10:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.caption h3{
+    margin-top: 350px;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 18px;
+    text-shadow: 10px 5px 5px black;
+}
+
+.caption p{
+    text-shadow: 10px 5px 5px black;
+    font-weight: bold;
+    max-width: 600px;
+    width: 90%;
+    margin: 0px auto;
+    color: beige;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+div.caption>button{
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 10px;
+}
+div.caption>button:hover{
+    background: skyblue;
+}
+div.caption button:hover{
+    transform: scale(1.03);
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transform: background 500ms;
+}
+
+.arrow img{
+    width: 50px;
+}
+
+.arrow:hover{
+    background: rgba(0, 0, 0, .4);
+}
+
+#arw{
+  left: 0;
+}
+
+#arw2{
+    right: 0;
+}
+
+footer{
+    background-color: #111;
+  }
+  
+  .footContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 1.0;
+  }
+  
+  /*Hover Effect on Social Media Icon */
+  
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerNav{
+    margin: 30px 0;
+    font-weight: bold;
+  }
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nondisc;
+  }
+  
+  .footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  .footerBottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  
